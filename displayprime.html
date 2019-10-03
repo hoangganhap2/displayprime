@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let count=0;
+    let number=" ";
+    let N=0;
+    for(N=2;count<=20;N++){
+        let a =true;
+        for(i=2;i<N;i++){
+            if(parseInt(N)%parseInt(i)==0){
+                a=false;
+                break;
+            }
+        }
+        if(a){
+            number=number+" "+N;
+            count++;
+        }
+    }
+    document.write(number);
+
+
+</script>
+</body>
+</html>
